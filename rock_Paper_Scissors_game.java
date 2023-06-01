@@ -3,7 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 public class rock_Paper_Scissors_game {
     public static void main(String[] args) {
-        String You = null;
+        String You = new String("null");
         String computer = null;
         Random rnd = new Random();
         int ai = rnd.nextInt(3);
@@ -43,7 +43,8 @@ public class rock_Paper_Scissors_game {
         }
 
         //Comparing You and Ai
-        if(You.equals(ai)){
+        boolean b1 = You.equals(ai);
+        if(!b1){
             System.out.println("Match Tie !");
         }
         else if (You.equals("ROCK") && computer.equals("PAPER")) {
