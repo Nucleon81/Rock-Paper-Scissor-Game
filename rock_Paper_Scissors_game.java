@@ -42,10 +42,9 @@ public class rock_Paper_Scissors_game {
             System.out.println("Computer Selected =" +computer);
         }
 
-        //Comparing You and Ai
-        boolean b1 = You.equals(ai);
-        if(!b1){
-            System.out.println("Match Tie !");
+        //Comparing You and AI
+        if(You.equals(computer)){
+            System.out.println("MATCH TIE !");
         }
         else if (You.equals("ROCK") && computer.equals("PAPER")) {
             System.out.println("COMPUTER WONS !");
